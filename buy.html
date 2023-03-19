@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy a piano</title>
+</head>
+<body bgcolor="DAE8EB">
+    <h1>Buy a piano from us!</h1>
+    <p>Your a few minutes away of making your dreams come true!
+        <br>
+        <em>Please fill out our form below to get a quotation.</em>
+        <br>
+        <strong>We only ship to London.</strong>
+    </p>
+    <hr>
+    <form action="mailto:jcacer8@gmail.com" method="post" enctype="text/plain">
+        <table cellspacing="10">
+            <tr>
+                <td>
+                    <label>Select your piano</label>
+                </td>
+                <td>
+                    <input list="piano-options" id="piano-choice" name="Piano selection" required size="30">
+                    <datalist id="piano-options">
+                        <option value="Steinway">Steinway</option>
+                        <option value="Yamaha CX60">Yamaha CX60</option>
+                        <option value="Bösendorfer">Bösendorfer</option>
+                        <option value="Upright">Upright</option>
+                        <option value="Honkytonk">Honkytonk</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Select the color of your piano</label>
+                </td>
+                <td>
+                    <input type="color" required id="piano-color" name="Piano color">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Select your preferred delivery date</label>
+                </td>
+                <td>
+                    <input type="date" required id="delivery-date" name="Preferred delivery date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Full name</label>
+                </td>
+                <td>
+                    <input type="text" required minlength="4" maxlength="50" size="30" id="name" name="Full Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Phone number</label>
+                </td>
+                <td>
+                    <input type="tel" required minlength="6" maxlength="15" size="30" id="phone" name="Phone number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Address</label>
+                </td>
+                <td>
+                    <input type="text" required minlength="10" maxlength="100" size="30" id="address" name="Delivery address">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Subscribe to our email list</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="email-list" name="E-mail subscription">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Special instructions or comments</label>
+                </td>
+                <td>
+                    <textarea name="Your message" id="message" rows="10" cols="30" required itemid="message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <table cellspacing="10">
+        <tr>
+            <th>Steinway</th>
+            <th>Yamaha CX60</th>
+            <th>Bösendorfer</th>
+            <th>Upright</th>
+            <th>Honkytonk</th>
+        </tr>
+        <tr>
+            <td>
+                <img src="Images/Steinway piano.jpeg" height="100" width="100" alt="Steinway piano">
+            </td>
+            <td>
+                <img src="Images/Yamaha piano.jpeg" height="100" width="100" alt="Yamaha piano">
+            </td>
+            <td>
+                <img src="Images/Bosendorfer piano.jpeg" height="100" width="100" alt="Bösendorfer piano">
+            </td>
+            <td>
+                <img src="Images/Upright piano.jpeg" height="100" width="100" alt="Upright piano">
+            </td>
+            <td>
+                <img src="Images/Honkytonk piano.jpeg" height="100" width="100" alt="Honkytonk piano">
+            </td>
+        </tr>
+    </table>
+    <a href="index.html"><i>Go back to home</i></a>
+</body>
+</html>
